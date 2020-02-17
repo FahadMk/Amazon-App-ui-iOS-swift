@@ -21,7 +21,6 @@
                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appleWatch_slide_1" translatesAutoresizingMaskIntoConstraints="NO" id="OU6-mB-IbG">
                         <rect key="frame" x="16" y="10" width="90" height="90"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="90" id="daf-yk-yKi"/>
                             <constraint firstAttribute="width" constant="90" id="iHt-HP-7JJ"/>
                         </constraints>
                     </imageView>
@@ -29,7 +28,6 @@
                         <rect key="frame" x="118" y="45" width="11" height="21"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="11" id="7Ue-nh-rF6"/>
-                            <constraint firstAttribute="height" constant="21" id="lFo-uG-skv"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -40,7 +38,6 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="90" id="out-9B-7BY"/>
-                            <constraint firstAttribute="width" constant="90" id="zxz-xb-tkd"/>
                         </constraints>
                     </imageView>
                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="accessories_3" translatesAutoresizingMaskIntoConstraints="NO" id="CO7-YD-Sps">
@@ -55,7 +52,6 @@
                         <rect key="frame" x="236" y="45" width="11" height="21"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="11" id="oej-rO-Ojv"/>
-                            <constraint firstAttribute="height" constant="21" id="pdF-4D-TlC"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
