@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DescriptionTVCell" customModule="Amazon_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="739"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Have a question ?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZwY-o3-zAh">
+                    <rect key="frame" x="16" y="41" width="140.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find answer in product info, Q&amp;As, reviews" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Imf-6Q-V8o">
+                    <rect key="frame" x="16" y="67" width="277" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.70218857020547942" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Tlh-it-cgW">
+                    <rect key="frame" x="16" y="92" width="343" height="35"/>
+                    <color key="tintColor" red="0.96244447970000002" green="0.56348146870000004" blue="0.0070098179569999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="343" id="ivc-gl-fNA"/>
+                        <constraint firstAttribute="height" constant="35" id="x2x-dd-wKY"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About this item" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p2j-XX-qEX">
+                    <rect key="frame" x="16" y="147" width="125" height="21"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" separatorInsetReference="fromAutomaticInsets" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lBv-7Z-nua" customClass="CustomTableView" customModule="Amazon_App" customModuleProvider="target">
+                    <rect key="frame" x="16" y="176" width="343" height="290"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="290" id="WZN-pn-9HH"/>
+                    </constraints>
+                    <inset key="scrollIndicatorInsets" minX="3" minY="-3" maxX="3" maxY="0.0"/>
+                    <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="pRX-TV-mFZ"/>
+                        <outlet property="delegate" destination="-1" id="rrf-js-2vW"/>
+                    </connections>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Frequently Bought Together" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eZf-4H-yJE">
+                    <rect key="frame" x="16" y="482" width="230" height="21"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UCE-vY-yoQ" customClass="CustomTableView" customModule="Amazon_App" customModuleProvider="target">
+                    <rect key="frame" x="8" y="511" width="343" height="193"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="193" id="EO1-NM-Khv"/>
+                    </constraints>
+                    <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ZwY-o3-zAh" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="4hP-OR-vrx"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="UCE-vY-yoQ" secondAttribute="bottom" constant="35" id="5WK-9Y-JHf"/>
+                <constraint firstItem="lBv-7Z-nua" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="9gl-BJ-huN"/>
+                <constraint firstItem="p2j-XX-qEX" firstAttribute="top" secondItem="Tlh-it-cgW" secondAttribute="bottom" constant="20" id="ANZ-jX-IHy"/>
+                <constraint firstItem="Imf-6Q-V8o" firstAttribute="top" secondItem="ZwY-o3-zAh" secondAttribute="bottom" constant="5" id="Ae1-ga-C24"/>
+                <constraint firstItem="Imf-6Q-V8o" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="FHh-aw-Sp6"/>
+                <constraint firstItem="lBv-7Z-nua" firstAttribute="top" secondItem="p2j-XX-qEX" secondAttribute="bottom" constant="8" id="Ige-Fs-jRK"/>
+                <constraint firstItem="ZwY-o3-zAh" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="21" id="L5D-P1-EeC"/>
+                <constraint firstItem="Tlh-it-cgW" firstAttribute="top" secondItem="Imf-6Q-V8o" secondAttribute="bottom" constant="8" id="Mn1-w1-z4U"/>
+                <constraint firstItem="UCE-vY-yoQ" firstAttribute="top" secondItem="eZf-4H-yJE" secondAttribute="bottom" constant="8" id="N04-m7-3Ls"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Tlh-it-cgW" secondAttribute="trailing" constant="16" id="bvp-vv-XsN"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="UCE-vY-yoQ" secondAttribute="trailing" constant="16" id="ciK-iR-g5v"/>
+                <constraint firstItem="Tlh-it-cgW" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="dqw-49-Q1i"/>
+                <constraint firstItem="eZf-4H-yJE" firstAttribute="top" secondItem="lBv-7Z-nua" secondAttribute="bottom" constant="16" id="hFo-X5-hpW"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="lBv-7Z-nua" secondAttribute="trailing" constant="16" id="iOe-0q-oqE"/>
+                <constraint firstItem="UCE-vY-yoQ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="lwN-vI-Xah"/>
+                <constraint firstItem="p2j-XX-qEX" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="q87-F0-F6M"/>
+                <constraint firstItem="eZf-4H-yJE" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="qSd-ua-d07"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="descriptionTV" destination="lBv-7Z-nua" id="cxK-hB-dER"/>
+                <outlet property="otherBoughtTV" destination="UCE-vY-yoQ" id="wP7-oe-fyu"/>
+                <outlet property="questionField" destination="Tlh-it-cgW" id="q9k-wR-T3g"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="183.05847076461771"/>
+        </view>
+    </objects>
+</document>

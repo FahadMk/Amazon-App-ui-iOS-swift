@@ -1,0 +1,6 @@
+framework module Pods_Amazon_App {
+  umbrella header "Pods-Amazon App-umbrella.h"
+
+  export *
+  module * { export * }
+}

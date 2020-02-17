@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xx2-bN-hbK">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Amazon_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="iMR-Ti-8Pr">
+                                <rect key="frame" x="0.0" y="111" width="375" height="556"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="0.0" id="j30-wl-FMi">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="0.0"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="j30-wl-FMi" id="74P-qu-J6m">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="0.0"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="QrF-Yi-cgy"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Rsq-OH-Y5C"/>
+                                </connections>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gwe-hd-8LP">
+                                <rect key="frame" x="0.0" y="64" width="375" height="40"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deliever to Fahad - Benguluru 575002" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IEO-6O-Lr9">
+                                        <rect key="frame" x="37" y="10" width="227" height="22"/>
+                                        <fontDescription key="fontDescription" name="MyanmarSangamMN" family="Myanmar Sangam MN" pointSize="14"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gEJ-Ni-9d9">
+                                        <rect key="frame" x="2" y="6" width="28" height="28"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="location_icon_main">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.31682828496005666" green="0.34850797471467226" blue="0.40095359529441621" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="IEO-6O-Lr9" firstAttribute="top" secondItem="Gwe-hd-8LP" secondAttribute="top" constant="10" id="33c-4s-MFT"/>
+                                    <constraint firstItem="gEJ-Ni-9d9" firstAttribute="leading" secondItem="Gwe-hd-8LP" secondAttribute="leading" constant="2" id="7jV-0G-0hP"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="IEO-6O-Lr9" secondAttribute="trailing" symbolic="YES" id="AZ3-Tu-WSt"/>
+                                    <constraint firstItem="gEJ-Ni-9d9" firstAttribute="top" secondItem="Gwe-hd-8LP" secondAttribute="top" constant="6" id="IFO-uu-j7f"/>
+                                    <constraint firstAttribute="height" constant="40" id="iDo-Ve-8Rv"/>
+                                    <constraint firstItem="IEO-6O-Lr9" firstAttribute="leading" secondItem="gEJ-Ni-9d9" secondAttribute="trailing" constant="7" id="mXu-0c-BHW"/>
+                                    <constraint firstAttribute="trailing" secondItem="gEJ-Ni-9d9" secondAttribute="trailing" constant="345" id="nH1-fe-v5i"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iMR-Ti-8Pr" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="QcD-xi-fpy"/>
+                            <constraint firstItem="iMR-Ti-8Pr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="UZ6-8W-6wz"/>
+                            <constraint firstItem="Gwe-hd-8LP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="atq-VE-lIH"/>
+                            <constraint firstItem="iMR-Ti-8Pr" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="f84-3l-p65"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Gwe-hd-8LP" secondAttribute="trailing" id="mxX-F7-bXM"/>
+                            <constraint firstItem="iMR-Ti-8Pr" firstAttribute="top" secondItem="Gwe-hd-8LP" secondAttribute="bottom" constant="7" id="vGK-4e-7zU"/>
+                            <constraint firstItem="Gwe-hd-8LP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vpS-L6-uEK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="SoU-dL-Fqc">
+                        <nil key="title"/>
+                        <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7hi-y7-lgj">
+                            <rect key="frame" x="126" y="0.0" width="87" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="iconfinder_amazon_294695.png"/>
+                        </button>
+                        <rightBarButtonItems>
+                            <barButtonItem image="cart_icon" id="uuV-Tt-bPv">
+                                <color key="tintColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </barButtonItem>
+                            <barButtonItem image="bell_icon" id="y4x-8T-AZJ">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </barButtonItem>
+                            <barButtonItem image="search_icon" id="dZi-gn-Jjs">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="productTabeView" destination="iMR-Ti-8Pr" id="zc9-m2-2s5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1151.2" y="123.68815592203899"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8J5-kH-71d">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xx2-bN-hbK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7Iu-cY-qdw">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.095161116460772216" green="0.1166118838354234" blue="0.1561137732818042" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="P2I-tC-Ziy">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="mL1-uw-GyV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dqE-hk-cPQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="212" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bell_icon" width="23" height="23"/>
+        <image name="cart_icon" width="23" height="23"/>
+        <image name="iconfinder_amazon_294695.png" width="71" height="71"/>
+        <image name="location_icon_main" width="28" height="28"/>
+        <image name="search_icon" width="23" height="23"/>
+    </resources>
+</document>

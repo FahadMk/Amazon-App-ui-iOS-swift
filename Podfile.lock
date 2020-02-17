@@ -1,0 +1,22 @@
+PODS:
+  - Cosmos (15.0.0)
+  - ImageSlideshow (1.8.3):
+    - ImageSlideshow/Core (= 1.8.3)
+  - ImageSlideshow/Core (1.8.3)
+
+DEPENDENCIES:
+  - Cosmos (~> 15.0)
+  - ImageSlideshow (~> 1.8.3)
+
+SPEC REPOS:
+  trunk:
+    - Cosmos
+    - ImageSlideshow
+
+SPEC CHECKSUMS:
+  Cosmos: a6dbd3d0baa0cc8f51f8598f7508d5a09d0a9ade
+  ImageSlideshow: 4694d7d699a1549582e7cc631fb392d8f91630f3
+
+PODFILE CHECKSUM: bb7818f46794a3d605d47bfdbe3a837201208e65
+
+COCOAPODS: 1.8.4

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="OfferCell" customModule="Amazon_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="348" height="266"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="QEN-bK-NzQ" customClass="CustomTableView" customModule="Amazon_App" customModuleProvider="target">
+                    <rect key="frame" x="16" y="20" width="316" height="200"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="316" id="xQ2-Pq-LPl"/>
+                    </constraints>
+                    <inset key="scrollIndicatorInsets" minX="3" minY="3" maxX="3" maxY="-1"/>
+                    <color key="separatorColor" white="0.55468981133566964" alpha="1" colorSpace="calibratedWhite"/>
+                    <inset key="separatorInset" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="ea7-e5-yS2"/>
+                        <outlet property="delegate" destination="-1" id="dZ8-Ob-QtL"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="QEN-bK-NzQ" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="Crn-5u-Ue1"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="QEN-bK-NzQ" secondAttribute="trailing" constant="16" id="Lys-Gs-lGb"/>
+                <constraint firstItem="QEN-bK-NzQ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="WbS-aj-IgR"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="QEN-bK-NzQ" secondAttribute="trailing" constant="16" id="dH6-xz-d2w"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="QEN-bK-NzQ" secondAttribute="bottom" constant="46" id="gBa-Wn-oeX"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="offerTV" destination="QEN-bK-NzQ" id="MHr-ZV-48G"/>
+            </connections>
+            <point key="canvasLocation" x="-307" y="-501"/>
+        </view>
+    </objects>
+</document>
