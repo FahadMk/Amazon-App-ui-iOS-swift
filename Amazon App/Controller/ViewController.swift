@@ -56,7 +56,7 @@ extension ViewController : UITableViewDelegate,UITableViewDataSource,OfferTVUpda
     
     }
     func updateScrollUpMethod() {
-        self.productTabeView!.setContentOffset(.zero, animated: true)
+         self.productTabeView!.setContentOffset(CGPoint(x: 0, y: 20), animated: true)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -102,6 +102,7 @@ extension ViewController : UITableViewDelegate,UITableViewDataSource,OfferTVUpda
                 let height = orderCell.bounds.height
                 self.height = height
                 orderCell.selectionStyle = .none
+                orderCell.scrollDelegate = self
                 productTVCell = orderCell
             }
         case .description:
